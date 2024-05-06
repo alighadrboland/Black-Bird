@@ -1,3 +1,9 @@
+//profile-title: base64:Sm9pbiB0Lm1lL1YycmF5Q29sbGVjdG9y
+//profile-update-interval: 1
+//subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
+//support-url: https://t.me/V2rayCollector
+//profile-web-page-url: https://t.me/V2rayCollectorBot
+
 {
     "log": {
         "disabled": false,
@@ -71,6 +77,20 @@
             "type": "direct"
         },
         {
+            "type": "tun",
+            "tag": "tun-in",
+            "domain_strategy": "",
+            "interface_name": "tun0",
+            "inet4_address": "172.19.0.1\/30",
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "stack": "system",
+            "endpoint_independent_nat": true,
+            "sniff": true,
+            "sniff_override_destination": false
+        },
+        {
             "domain_strategy": "",
             "listen": "0.0.0.0",
             "listen_port": 2080,
@@ -86,18 +106,52 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "Worker 01",
-                "Worker 02",
-                "Worker 03"
+                "1-vless-worker-blackbird.alIGHAdrBOlanD.IR",
+                "2-vless-worker-blackbird.ALiGhAdrboLaNd.iR",
+                "3-vless-worker-blackbird.aLIGhadrBoland.IR",
+                "4-vless-worker-blackbird.alighadRbOLAnd.IR",
+                "5-vless-worker-blackbird.AlIGHaDrbOlAnd.ir",
+                "6-vless-worker-blackbird.alIGHAdRBolAND.ir",
+                "7-vless-worker-blackbird.alIGhaDRBOLand.Ir",
+                "8-vless-worker-blackbird.aLigHadrBolaNd.IR",
+                "9-vless-worker-blackbird.aLIGHaDrBOlANd.iR",
+                "10-vless-worker-blackbird.AliGhadRbolAnd.IR",
+                "11-vless-worker-blackbird.AlIgHADrBolanD.ir",
+                "12-vless-worker-blackbird.aLIGHaDRBOLAnd.Ir",
+                "13-vless-worker-blackbird.aLIghadrBOLaND.Ir",
+                "14-vless-worker-blackbird.alIGhADRBOlaNd.IR",
+                "15-vless-worker-blackbird.AligHaDRbOLanD.ir",
+                "16-vless-worker-blackbird.AliGHaDrbOLAnD.ir",
+                "17-vless-worker-blackbird.aLigHaDRBolanD.Ir",
+                "18-vless-worker-blackbird.alighadrbOlAND.ir",
+                "19-vless-worker-blackbird.aLigHADRBoLaNd.ir",
+                "20-vless-worker-blackbird.aLIGhAdrbolANd.Ir"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "Worker 01",
-                "Worker 02",
-                "Worker 03"
+                "1-vless-worker-blackbird.alIGHAdrBOlanD.IR",
+                "2-vless-worker-blackbird.ALiGhAdrboLaNd.iR",
+                "3-vless-worker-blackbird.aLIGhadrBoland.IR",
+                "4-vless-worker-blackbird.alighadRbOLAnd.IR",
+                "5-vless-worker-blackbird.AlIGHaDrbOlAnd.ir",
+                "6-vless-worker-blackbird.alIGHAdRBolAND.ir",
+                "7-vless-worker-blackbird.alIGhaDRBOLand.Ir",
+                "8-vless-worker-blackbird.aLigHadrBolaNd.IR",
+                "9-vless-worker-blackbird.aLIGHaDrBOlANd.iR",
+                "10-vless-worker-blackbird.AliGhadRbolAnd.IR",
+                "11-vless-worker-blackbird.AlIgHADrBolanD.ir",
+                "12-vless-worker-blackbird.aLIGHaDRBOLAnd.Ir",
+                "13-vless-worker-blackbird.aLIghadrBOLaND.Ir",
+                "14-vless-worker-blackbird.alIGhADRBOlaNd.IR",
+                "15-vless-worker-blackbird.AligHaDRbOLanD.ir",
+                "16-vless-worker-blackbird.AliGHaDrbOLAnD.ir",
+                "17-vless-worker-blackbird.aLigHaDRBolanD.Ir",
+                "18-vless-worker-blackbird.alighadrbOlAND.ir",
+                "19-vless-worker-blackbird.aLigHADRBoLaNd.ir",
+                "20-vless-worker-blackbird.aLIGhAdrbolANd.Ir"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -120,11 +174,11 @@
             "type": "dns"
         },
         {
-            "tag": "Worker 01",
+            "tag": "1-vless-worker-blackbird.alIGHAdrBOlanD.IR",
             "type": "vless",
-            "server": "worker01.liandigi.ir",
+            "server": "blackbird.alIGHAdrBOlanD.IR",
             "server_port": 443,
-            "uuid": "3cce22b3-9cf4-4b02-a035-92b98923de4d",
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -134,7 +188,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "worker01.liandigi.ir",
+                "server_name": "blackbird.alIGHAdrBOlanD.IR",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -144,18 +198,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vless-ws\/",
                 "headers": {
-                    "Host": "worker01.liandigi.ir"
+                    "Host": "blackbird.alIGHAdrBOlanD.IR"
                 }
             }
         },
         {
-            "tag": "Worker 02",
+            "tag": "2-vless-worker-blackbird.ALiGhAdrboLaNd.iR",
             "type": "vless",
-            "server": "worker02.evamo.ir",
-            "server_port": 443,
-            "uuid": "5a0d3b3a-3f1b-492c-b070-a13547ed28f7",
+            "server": "blackbird.ALiGhAdrboLaNd.iR",
+            "server_port": 2096,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -165,7 +219,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "worker02.evamo.ir",
+                "server_name": "blackbird.ALiGhAdrboLaNd.iR",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -175,18 +229,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vless-ws\/",
                 "headers": {
-                    "Host": "worker02.evamo.ir"
+                    "Host": "blackbird.ALiGhAdrboLaNd.iR"
                 }
             }
         },
         {
-            "tag": "Worker 03",
+            "tag": "3-vless-worker-blackbird.aLIGhadrBoland.IR",
             "type": "vless",
-            "server": "worker03.whoisarya.ir",
-            "server_port": 443,
-            "uuid": "54604138-5722-470a-b24d-9ea5846d6aa0",
+            "server": "blackbird.aLIGhadrBoland.IR",
+            "server_port": 2053,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -196,7 +250,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "worker03.whoisarya.ir",
+                "server_name": "blackbird.aLIGhadrBoland.IR",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -206,9 +260,536 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vless-ws\/",
                 "headers": {
-                    "Host": "worker03.whoisarya.ir"
+                    "Host": "blackbird.aLIGhadrBoland.IR"
+                }
+            }
+        },
+        {
+            "tag": "4-vless-worker-blackbird.alighadRbOLAnd.IR",
+            "type": "vless",
+            "server": "blackbird.alighadRbOLAnd.IR",
+            "server_port": 2053,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.alighadRbOLAnd.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.alighadRbOLAnd.IR"
+                }
+            }
+        },
+        {
+            "tag": "5-vless-worker-blackbird.AlIGHaDrbOlAnd.ir",
+            "type": "vless",
+            "server": "blackbird.AlIGHaDrbOlAnd.ir",
+            "server_port": 8443,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.AlIGHaDrbOlAnd.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.AlIGHaDrbOlAnd.ir"
+                }
+            }
+        },
+        {
+            "tag": "6-vless-worker-blackbird.alIGHAdRBolAND.ir",
+            "type": "vless",
+            "server": "blackbird.alIGHAdRBolAND.ir",
+            "server_port": 2083,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.alIGHAdRBolAND.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.alIGHAdRBolAND.ir"
+                }
+            }
+        },
+        {
+            "tag": "7-vless-worker-blackbird.alIGhaDRBOLand.Ir",
+            "type": "vless",
+            "server": "blackbird.alIGhaDRBOLand.Ir",
+            "server_port": 443,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.alIGhaDRBOLand.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.alIGhaDRBOLand.Ir"
+                }
+            }
+        },
+        {
+            "tag": "8-vless-worker-blackbird.aLigHadrBolaNd.IR",
+            "type": "vless",
+            "server": "blackbird.aLigHadrBolaNd.IR",
+            "server_port": 2053,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLigHadrBolaNd.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLigHadrBolaNd.IR"
+                }
+            }
+        },
+        {
+            "tag": "9-vless-worker-blackbird.aLIGHaDrBOlANd.iR",
+            "type": "vless",
+            "server": "blackbird.aLIGHaDrBOlANd.iR",
+            "server_port": 2096,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLIGHaDrBOlANd.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLIGHaDrBOlANd.iR"
+                }
+            }
+        },
+        {
+            "tag": "10-vless-worker-blackbird.AliGhadRbolAnd.IR",
+            "type": "vless",
+            "server": "blackbird.AliGhadRbolAnd.IR",
+            "server_port": 2096,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.AliGhadRbolAnd.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.AliGhadRbolAnd.IR"
+                }
+            }
+        },
+        {
+            "tag": "11-vless-worker-blackbird.AlIgHADrBolanD.ir",
+            "type": "vless",
+            "server": "blackbird.AlIgHADrBolanD.ir",
+            "server_port": 2087,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.AlIgHADrBolanD.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.AlIgHADrBolanD.ir"
+                }
+            }
+        },
+        {
+            "tag": "12-vless-worker-blackbird.aLIGHaDRBOLAnd.Ir",
+            "type": "vless",
+            "server": "blackbird.aLIGHaDRBOLAnd.Ir",
+            "server_port": 443,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLIGHaDRBOLAnd.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLIGHaDRBOLAnd.Ir"
+                }
+            }
+        },
+        {
+            "tag": "13-vless-worker-blackbird.aLIghadrBOLaND.Ir",
+            "type": "vless",
+            "server": "blackbird.aLIghadrBOLaND.Ir",
+            "server_port": 2087,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLIghadrBOLaND.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLIghadrBOLaND.Ir"
+                }
+            }
+        },
+        {
+            "tag": "14-vless-worker-blackbird.alIGhADRBOlaNd.IR",
+            "type": "vless",
+            "server": "blackbird.alIGhADRBOlaNd.IR",
+            "server_port": 8443,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.alIGhADRBOlaNd.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.alIGhADRBOlaNd.IR"
+                }
+            }
+        },
+        {
+            "tag": "15-vless-worker-blackbird.AligHaDRbOLanD.ir",
+            "type": "vless",
+            "server": "blackbird.AligHaDRbOLanD.ir",
+            "server_port": 2053,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.AligHaDRbOLanD.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.AligHaDRbOLanD.ir"
+                }
+            }
+        },
+        {
+            "tag": "16-vless-worker-blackbird.AliGHaDrbOLAnD.ir",
+            "type": "vless",
+            "server": "blackbird.AliGHaDrbOLAnD.ir",
+            "server_port": 2083,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.AliGHaDrbOLAnD.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.AliGHaDrbOLAnD.ir"
+                }
+            }
+        },
+        {
+            "tag": "17-vless-worker-blackbird.aLigHaDRBolanD.Ir",
+            "type": "vless",
+            "server": "blackbird.aLigHaDRBolanD.Ir",
+            "server_port": 2096,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLigHaDRBolanD.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLigHaDRBolanD.Ir"
+                }
+            }
+        },
+        {
+            "tag": "18-vless-worker-blackbird.alighadrbOlAND.ir",
+            "type": "vless",
+            "server": "blackbird.alighadrbOlAND.ir",
+            "server_port": 8443,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.alighadrbOlAND.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.alighadrbOlAND.ir"
+                }
+            }
+        },
+        {
+            "tag": "19-vless-worker-blackbird.aLigHADRBoLaNd.ir",
+            "type": "vless",
+            "server": "blackbird.aLigHADRBoLaNd.ir",
+            "server_port": 2083,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLigHADRBoLaNd.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLigHADRBoLaNd.ir"
+                }
+            }
+        },
+        {
+            "tag": "20-vless-worker-blackbird.aLIGhAdrbolANd.Ir",
+            "type": "vless",
+            "server": "blackbird.aLIGhAdrbolANd.Ir",
+            "server_port": 2087,
+            "uuid": "1423f4c0-bd52-5f8e-8f53-3ee327181a05",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "blackbird.aLIGhAdrbolANd.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless-ws\/",
+                "headers": {
+                    "Host": "blackbird.aLIGhAdrbolANd.Ir"
                 }
             }
         }
